@@ -1,0 +1,187 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #222222;
+    line-height: 1.6;
+}
+
+/* Header Frame Styling */
+#header {
+    background-color: #6b1d2f; /* SVC Maroon */
+    color: #ffffff;
+    text-align: center;
+    padding: 22px 15px;
+    border-bottom: 4px solid #d4af37; /* Gold accent */
+    height: 100vh;
+}
+
+#header h1 {
+    font-size: 1.9rem;
+    margin-bottom: 4px;
+}
+
+/* Left Menu Frame Styling */
+.menu-body {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 15px;
+}
+
+#navbar h3 {
+    color: #ffd700;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #d4af37;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu > li > a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 11px 12px;
+    border-bottom: 1px solid #333333;
+}
+
+.menu > li > a:hover {
+    background-color: #6b1d2f;
+    color: #ffd700;
+}
+
+/* Vertical Drop-Down Menu inside Sidebar */
+.dropdown-menu {
+    display: none;
+    list-style: none;
+    background-color: #333333;
+}
+
+.dropdown-menu li a {
+    display: block;
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 9px 12px 9px 25px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #444444;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #8a263d;
+    color: #ffd700;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Main Content Frame Layout */
+.container {
+    max-width: 920px;
+    margin: 20px auto;
+    padding: 0 18px;
+}
+
+.box {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+}
+
+.box h2 {
+    color: #6b1d2f;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #d4af37;
+}
+
+/* About Section Flex Layout */
+.about-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.dept-img {
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #eeeeee;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #6b1d2f;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Lists */
+.box ul {
+    padding-left: 20px;
+}
+
+.box li {
+    margin-bottom: 8px;
+}
+
+/* Contact Footer */
+#contact {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 0.9rem;
+}
+
+#contact h3 {
+    color: #ffd700;
+    margin-bottom: 6px;
+}
+
+#contact a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 650px) {
+    .about-row {
+        flex-direction: column;
+    }
+
+    .dept-img {
+        width: 100%;
+    }
+}
